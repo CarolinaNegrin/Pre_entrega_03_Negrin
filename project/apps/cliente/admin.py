@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.db import models
-from .models import Cliente, Domicilio, Ciudad
+from .models import Cliente, Ciudad
 # Register your models here.
 
 admin.site.register(Cliente)
-admin.site.register(Domicilio)
+
 admin.site.register(Ciudad)

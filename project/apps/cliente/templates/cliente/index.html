@@ -1,0 +1,20 @@
+{% extends 'MENU/index.html' %}
+
+{% block INDEX_TITULO %}
+    <h1>Clientes</h1>
+{% endblock INDEX_TITULO %}
+
+{% block INDEX_CONTENIDO %}
+
+    {% for cliente in clientes %}
+        <h2>{{ cliente.nombre }}, {{ cliente.apellido }}</h2>
+        <p>{{ cliente.nacimiento }}</p>
+        <p>{{ cliente.ciudad_id }}</p>
+        <p>{{ cliente.domicilio }}</p>
+        <p>{{ cliente.contacto }}</p>
+    {% endfor %}
+
+    <a href="{% url 'HOME:index' %}">Ir al menú principal</a>
+    <a href="{% url 'cliente:nuevocliente' %}">Crear nuevo cliente</a>
+
+{% endblock INDEX_CONTENIDO %}

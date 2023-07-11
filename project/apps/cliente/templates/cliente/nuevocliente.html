@@ -1,0 +1,16 @@
+{% extends 'MENU/index.html' %}
+
+    {% block INDEX_TITULO %}
+        <H1>Crear Nuevo Cliente</H1>
+    {% endblock INDEX_TITULO %}
+
+    {% block INDEX_CONTENIDO %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Guardar</button>
+        </form>
+
+        <a href="{% url 'HOME:index' %}">Ir al menú principal</a>
+    {% endblock INDEX_CONTENIDO %}
+        

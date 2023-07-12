@@ -1,0 +1,20 @@
+{% extends 'MENU/index.html' %}
+
+{% block INDEX_TITULO %}
+<div class="container">
+    <h1>Nuestros Productos</h1>
+</div>    
+{% endblock INDEX_TITULO %}
+
+{% block INDEX_CONTENIDO %}
+
+<div class="container">
+    {% for producto in productos %}
+        <h2>{{ producto.nombre }}, {{ producto.sabor }}</h2>
+        <p>{{ producto.descripcion }}</p>
+        <p>$ {{ producto.precio }}</p>
+    {% endfor %}
+</div>
+<a href="{% url 'producto:nuevoproducto' %}">Crear nuevo producto</a>
+
+{% endblock INDEX_CONTENIDO %}   

@@ -133,10 +133,12 @@ h1, .h1 {
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
   color: white;
+  background-color: lightcoral;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
+    
   }
 }
 
@@ -169,7 +171,9 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: lightcoral;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 abbr[title] {

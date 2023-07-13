@@ -7,19 +7,19 @@
     <title>Cereza Pastelería</title>
     <link href="{% static 'MENU/css/styles.css' %}" rel="stylesheet" />
 </head>
-<body>
+<body display="flex", flex-direction="column">
     {% include 'MENU/navbar.html' %}
     {% block TITULO %}
         <div class="container">
-            <h1>Bienvenido a Cereza Pastelería</h1>
+            
         </div>
     {% endblock TITULO %}
 
     {% block CONTENIDO %}
-        <h2>Realiza tu pedido desde la comodidad de tu casa</h2>
-        <a href="{% url 'cliente:home' %}"> Ir a clientes </a>
+       
     {% endblock CONTENIDO %}
 
         
 </body>
+<footer>{% include 'MENU/foother.html' %}</footer>
 </html>

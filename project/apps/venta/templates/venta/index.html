@@ -13,6 +13,6 @@
                 <h2>{{ venta.cliente }} compró {{ venta.carrito.nombre }} por $ {{ venta.carrito.precio }}</h2>
             {% endfor %}
         </div>
-        <a href="{% url 'venta:nuevaventa' %}">Registrar nueva venta</a>
+        <a href="{% url 'venta:nuevaventa' %}"  style="font-size: x-large;">Registrar nueva venta</a>
     
     {% endblock INDEX_CONTENIDO %}   

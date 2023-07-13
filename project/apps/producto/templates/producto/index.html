@@ -10,11 +10,11 @@
 
 <div class="container">
     {% for producto in productos %}
-        <h2>{{ producto.nombre }}, {{ producto.sabor }}</h2>
-        <p>{{ producto.descripcion }}</p>
-        <p>$ {{ producto.precio }}</p>
+        <h2 style="background-color: lightcoral; font-weight: bold;">{{ producto.nombre }}, {{ producto.sabor }}</h2>
+        <p style="font-size: x-large; font-weight: bold; color: white;">{{ producto.descripcion }}</p>
+        <p style="font-size: x-large; font-weight: bold; color: white;">$ {{ producto.precio }}</p>
     {% endfor %}
 </div>
-<a href="{% url 'producto:nuevoproducto' %}">Crear nuevo producto</a>
+<a href="{% url 'producto:nuevoproducto' %}" style="font-size: x-large;" >Crear nuevo producto</a>
 
 {% endblock INDEX_CONTENIDO %}   
